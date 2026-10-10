@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b1c">
+  <title>Fronteira Summit — Ideias que movimentam a fronteira</title>
+  <meta name="description" content="Conhecimento, inovação, tecnologia e networking para transformar ideias em possibilidades. Participe do Fronteira Summit, evento gratuito em Uruguaiana.">
+  <meta property="og:title" content="Fronteira Summit">
+  <meta property="og:description" content="Inovação, tecnologia, empreendedorismo e conexões. Um evento gratuito para a comunidade da fronteira.">
+  <style>
+    :root{--bg:#080b1c;--panel:#10152b;--text:#f5f7ff;--muted:#b2bad3;--cyan:#5ce1f4;--purple:#9b8cff;--line:rgba(191,205,255,.16);--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+    body:before{content:"";position:absolute;inset:0 0 auto;height:760px;pointer-events:none;background:radial-gradient(ellipse at 78% 13%,rgba(106,75,225,.23),transparent 38%),radial-gradient(ellipse at 16% 22%,rgba(23,181,220,.15),transparent 34%);z-index:-1}
+    a{color:inherit;text-decoration:none} button,input{font:inherit} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(8,11,28,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.04em;font-size:1.08rem}
+    .brandmark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--cyan),#5b7cff 55%,var(--purple));display:grid;place-items:center;color:#07101d;font-weight:900;font-size:1.1rem;box-shadow:0 0 28px #5ce1f433}
+    .navlinks{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:white}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border:0;border-radius:12px;background:linear-gradient(100deg,#5ce1f4,#a69aff);color:#07101b;font-weight:800;cursor:pointer;transition:transform .2s,filter .2s;box-shadow:0 8px 28px #6b8cff25}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)} .btn:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none}
+    .hero{padding:94px 0 78px;position:relative;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #5ce1f447;background:#5ce1f40c;color:#a6f4ff;padding:7px 12px;border-radius:999px;font-size:.78rem;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
+    .pulse{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+    h1{font-size:clamp(2.7rem,6vw,5.4rem);line-height:.99;letter-spacing:-.065em;margin:24px 0}
+    .gradient-text{background:linear-gradient(100deg,#fff 8%,#8fefff 48%,#b5a6ff 90%);color:transparent;background-clip:text;-webkit-background-clip:text}
+    .lead{max-width:610px;color:#c2c9e0;font-size:1.13rem;line-height:1.8;margin:0 0 28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.microcopy{color:#8f9ab9;font-size:.82rem;margin-top:14px}
+    .visual{position:relative;min-height:420px;display:grid;place-items:center}
+    .orbit{position:absolute;width:min(100%,430px);aspect-ratio:1;border:1px solid #8e9aff36;border-radius:50%;transform:rotate(-24deg)}
+    .orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #5ce1f42b;border-radius:50%;inset:11%}
+    .orbit:after{inset:24%;border-color:#a69aff3d}
+    .orb-core{width:250px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 25%,#8ff3ff 0,#5c87ff 27%,#7a55d8 56%,#151832 75%);box-shadow:0 0 65px #6e72ff3d, inset -25px -30px 55px #080b1caa;position:relative;z-index:1}
+    .orb-core:after{content:"";position:absolute;inset:16%;border:1px solid #ffffff6b;border-radius:50%;transform:rotate(-35deg) scaleX(1.2)}
+    .float-tag{position:absolute;z-index:2;padding:12px 15px;border:1px solid var(--line);border-radius:14px;background:#11162bd9;backdrop-filter:blur(10px);font-size:.86rem;box-shadow:0 12px 36px #0003}
+    .float-tag strong{display:block;color:white}.float-tag span{color:var(--muted);font-size:.76rem}.tag-one{top:48px;left:0}.tag-two{right:0;top:130px}.tag-three{bottom:48px;left:12%}
+    .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.stat{display:flex;align-items:center;gap:13px;justify-content:center}.stat-icon{width:42px;height:42px;border-radius:12px;background:#a69aff15;border:1px solid #a69aff35;display:grid;place-items:center;color:var(--cyan);font-size:1.15rem}.stat strong{display:block;font-size:.97rem}.stat span{display:block;color:var(--muted);font-size:.8rem}
+    section.content{padding:94px 0}.section-head{max-width:720px;margin-bottom:40px}.kicker{color:var(--cyan);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.05em;line-height:1.08;margin:12px 0 16px}.section-head p{color:var(--muted);font-size:1.03rem;margin:0}
+    .benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{padding:26px 24px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#141a33b8,#0c1022b8);min-height:218px}.benefit-icon{font-size:1.4rem;color:var(--cyan);margin-bottom:22px}.benefit h3{font-size:1.13rem;margin:0 0 9px}.benefit p{font-size:.92rem;color:var(--muted);margin:0}
+    .band{padding:46px;border-radius:26px;border:1px solid #8d8bff45;background:radial-gradient(ellipse at 90% 10%,#7b69e82c,transparent 45%),linear-gradient(120deg,#121a35,#0c1023);display:grid;grid-template-columns:1fr auto;align-items:center;gap:35px}.band h2{font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.08;letter-spacing:-.04em;margin:0 0 13px}.band p{color:var(--muted);margin:0;max-width:650px}
+    .faq-list{max-width:850px}.faq{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;list-style:none;padding:22px 40px 22px 0;font-weight:750;position:relative}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";position:absolute;right:4px;color:var(--cyan);font-size:1.3rem;top:17px}.faq[open] summary:after{content:"−"}.faq p{color:var(--muted);margin:0;padding:0 32px 22px 0}
+    .signup{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}.signup-copy h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;letter-spacing:-.05em;margin:13px 0}.signup-copy p{color:var(--muted)}.signup-note{margin-top:25px;padding:16px;border-left:2px solid var(--cyan);background:#5ce1f40b;color:#aeb9d8;font-size:.88rem}
+    form{padding:28px;border:1px solid var(--line);border-radius:20px;background:#11162a} .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.86rem;font-weight:700}.field input{width:100%;background:#090d20;border:1px solid #303957;color:white;border-radius:10px;padding:13px 14px}.field input::placeholder{color:#737e9e}.privacy{font-size:.76rem;color:#8994b4;margin:15px 0}.form-status{font-size:.9rem;margin-top:14px;min-height:24px}.form-status.error{color:#ff9caa}.form-status.success{color:#8ff3c3}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#8f9ab9;font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-links{display:flex;gap:18px}
+    .mobile-cta{display:none}
+    @media(max-width:850px){.hero-grid,.signup{grid-template-columns:1fr;gap:30px}.hero{padding-top:66px}.visual{min-height:360px}.orb-core{width:210px}.orbit{width:340px}.tag-one{left:4%}.tag-two{right:3%}.tag-three{bottom:20px}.benefit-grid{grid-template-columns:1fr 1fr}.band{grid-template-columns:1fr;padding:32px}.navlinks{display:none}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav{height:66px}.brand{font-size:.95rem}.nav>.btn{padding:10px 12px;font-size:.8rem}.hero{padding:52px 0 50px}h1{font-size:clamp(2.65rem,13vw,4rem)}.lead{font-size:1rem}.hero-actions .btn{width:100%}.visual{min-height:300px;transform:scale(.92);margin:-8px 0}.orb-core{width:180px}.orbit{width:290px}.float-tag{padding:9px 11px;font-size:.78rem}.tag-one{top:20px}.tag-two{top:100px}.tag-three{bottom:5px}.stats-grid{grid-template-columns:1fr;gap:16px}.stat{justify-content:flex-start}.content{padding:66px 0!important}.benefit-grid{grid-template-columns:1fr}.benefit{min-height:auto}.band{padding:25px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}form{padding:20px}.footer-inner{align-items:flex-start;flex-direction:column}.mobile-cta{display:block;position:fixed;bottom:10px;left:12px;right:12px;z-index:30}.mobile-cta .btn{width:100%;box-shadow:0 6px 30px #0008}footer{padding-bottom:88px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Fronteira Summit, início"><span class="brandmark" aria-hidden="true">F</span><span>FRONTEIRA <span class="gradient-text">SUMMIT</span></span></a>
+    <nav class="navlinks" aria-label="Navegação principal"><a href="#experiencia">A experiência</a><a href="#beneficios">O que você leva</a><a href="#duvidas">Dúvidas</a></nav>
+    <a class="btn" href="#inscricao">Quero participar <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> Inovação • Tecnologia • Empreendedorismo</div>
+        <h1>Ideias que movimentam a <span class="gradient-text">fronteira.</span></h1>
+        <p class="lead">Um encontro para quem quer descobrir novas possibilidades, aprender sobre tecnologia e inteligência artificial e criar conexões que fazem os negócios avançarem.</p>
+        <div class="hero-actions"><a class="btn" href="#inscricao">Reserve seu lugar — é gratuito <span aria-hidden="true">→</span></a><a class="btn secondary" href="#experiencia">Conheça a experiência</a></div>
+        <p class="microcopy">Evento gratuito • Em Uruguaiana/RS • Vagas limitadas conforme capacidade</p>
+      </div>
+      <div class="visual" aria-label="Ilustração abstrata de conexões digitais e inovação" role="img">
+        <div class="orbit"></div><div class="orb-core"></div>
+        <div class="float-tag tag-one"><strong>Novas ideias</strong><span>Inspiração para agir</span></div>
+        <div class="float-tag tag-two"><strong>IA & tecnologia</strong><span>Conhecimento aplicável</span></div>
+        <div class="float-tag tag-three"><strong>Conexões reais</strong><span>Networking na fronteira</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="stats" aria-label="Destaques do evento"><div class="wrap stats-grid">
+    <div class="stat"><div class="stat-icon" aria-hidden="true">✦</div><div><strong>100% gratuito</strong><span>Conteúdo aberto à comunidade</span></div></div>
+    <div class="stat"><div class="stat-icon" aria-hidden="true">⌘</div><div><strong>Ideias e tendências</strong><span>Inovação, IA, marketing e negócios</span></div></div>
+    <div class="stat"><div class="stat-icon" aria-hidden="true">◎</div><div><strong>Networking</strong><span>Encontre pessoas e novas perspectivas</span></div></div>
+  </div></div>
+  <section class="content" id="experiencia">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Mais do que um evento</span><h2>Um espaço para aprender, conectar e <span class="gradient-text">tirar ideias do papel.</span></h2><p>O Fronteira Summit reúne temas que estão transformando empresas e comunidades — em uma experiência pensada para quem empreende, trabalha, estuda ou quer explorar o novo.</p></div>
+      <div class="benefit-grid" id="beneficios">
+        <article class="benefit"><div class="benefit-icon" aria-hidden="true">✧</div><h3>Conhecimento que abre caminhos</h3><p>Explore ideias sobre inovação, inteligência artificial, marketing e tecnologia para ampliar seu repertório.</p></article>
+        <article class="benefit"><div class="benefit-icon" aria-hidden="true">⌁</div><h3>Novas perspectivas para seu negócio</h3><p>Conheça abordagens e tendências que podem inspirar melhorias, novos projetos e oportunidades.</p></article>
+        <article class="benefit"><div class="benefit-icon" aria-hidden="true">⟷</div><h3>Conexões que aproximam</h3><p>Compartilhe experiências com empresários, profissionais, estudantes e pessoas que movimentam a região.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="content" style="padding-top:0">
+    <div class="wrap"><div class="band"><div><span class="kicker">Uma oportunidade para a região</span><h2>O próximo insight pode mudar a forma como você enxerga o seu negócio.</h2><p>Reserve um tempo para aprender, fazer perguntas e conhecer pessoas. E o melhor: a participação é gratuita.</p></div><a class="btn" href="#inscricao">Quero garantir meu lugar ↗</a></div></div>
+  </section>
+  <section class="content" id="duvidas">
+    <div class="wrap"><div class="section-head"><span class="kicker">Antes de se inscrever</span><h2>Dúvidas frequentes</h2><p>O essencial para você dar o próximo passo.</p></div>
+      <div class="faq-list">
+        <details class="faq"><summary>O Fronteira Summit é gratuito?</summary><p>Sim. De acordo com as informações do evento, a participação é gratuita.</p></details>
+        <details class="faq"><summary>Quem pode participar?</summary><p>Empresários, profissionais, estudantes e qualquer pessoa da comunidade interessada em inovação, tecnologia e empreendedorismo.</p></details>
+        <details class="faq"><summary>Preciso entender de tecnologia ou inteligência artificial?</summary><p>Não. O evento é voltado à comunidade em geral. Venha com curiosidade e vontade de aprender.</p></details>
+        <details class="faq"><summary>Quando e onde será o evento?</summary><p>As datas, horários e o local da próxima edição ainda precisam ser confirmados nesta página pela organização. Acompanhe os canais oficiais do Fronteira Summit para as informações atualizadas.</p></details>
+        <details class="faq"><summary>Como minha inscrição será confirmada?</summary><p>Preencha seus dados no formulário. Nesta versão demonstrativa, o formulário valida as informações no navegador, mas ainda não envia os dados para a organização. A integração oficial precisa ser configurada antes da publicação.</p></details>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="inscricao" style="padding-top:20px">
+    <div class="wrap signup">
+      <div class="signup-copy"><span class="kicker">Participe do movimento</span><h2>Seu lugar na próxima conversa sobre o futuro começa aqui.</h2><p>Deixe seus dados para demonstrar interesse em participar do Fronteira Summit. A organização poderá usar essas informações para comunicar novidades quando o formulário estiver conectado a um serviço oficial.</p><div class="signup-note"><strong>Importante:</strong> este protótipo ainda não transmite nem armazena os dados enviados. Antes de divulgar, conecte o formulário à plataforma de inscrição ou ao CRM da organização e publique uma política de privacidade.</div></div>
+      <form id="lead-form" novalidate>
+        <div class="form-grid">
+          <div class="field full"><label for="name">Nome completo *</label><input id="name" name="name" autocomplete="name" placeholder="Como podemos chamar você?" required minlength="2"></div>
+          <div class="field"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required></div>
+          <div class="field"><label for="phone">WhatsApp (opcional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(55) 99999-9999"></div>
+          <div class="field full"><label for="interest">O que mais te interessa? (opcional)</label><input id="interest" name="interest" placeholder="Ex.: IA, marketing, inovação, networking"></div>
+        </div>
+        <p class="privacy">* Campos obrigatórios. Ao enviar, você demonstra interesse em receber informações sobre o evento. Não compartilhe dados sensíveis.</p>
+        <button class="btn" type="submit" style="width:100%">Enviar meu interesse <span aria-hidden="true">→</span></button>
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#inicio"><span class="brandmark" aria-hidden="true">F</span><span>FRONTEIRA <span class="gradient-text">SUMMIT</span></span></a><span>Inovação, tecnologia e empreendedorismo na fronteira.</span><div class="footer-links"><a href="#duvidas">Dúvidas</a><a href="#inscricao">Manifestar interesse</a></div></div></footer>
+<div class="mobile-cta"><a class="btn" href="#inscricao">Reserve seu lugar — gratuito ↗</a></div>
+<script>
+  const form = document.getElementById('lead-form');
+  const status = document.getElementById('form-status');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    status.className = 'form-status';
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    if (!name.value.trim() || name.value.trim().length < 2) {
+      status.textContent = 'Informe seu nome completo para continuar.';
+      status.classList.add('error'); name.focus(); return;
+    }
+    if (!email.validity.valid || !email.value.trim()) {
+      status.textContent = 'Confira o e-mail informado e tente novamente.';
+      status.classList.add('error'); email.focus(); return;
+    }
+    status.textContent = 'Validação concluída! Esta é uma demonstração: seus dados não foram enviados. A organização precisa conectar o formulário a um serviço de inscrição.';
+    status.classList.add('success');
+  });
+</script>
+</body>
+</html>
